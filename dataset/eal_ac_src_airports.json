@@ -1,0 +1,19 @@
+{
+	"name": "eal_ac_src_airports",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "eal_airlinechoice_src",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Source"
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"typeProperties": {
+			"relativeUrl": "airports"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

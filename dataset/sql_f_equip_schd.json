@@ -1,0 +1,62 @@
+{
+	"name": "sql_f_equip_schd",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "eal_sqldb_EDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Destination Table/Prod"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "EQP_SCHED_ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "AC_RGSTRN",
+				"type": "varchar"
+			},
+			{
+				"name": "STS_CD",
+				"type": "varchar"
+			},
+			{
+				"name": "STS_NAME",
+				"type": "varchar"
+			},
+			{
+				"name": "STS_DESC",
+				"type": "varchar"
+			},
+			{
+				"name": "STRT_TIME",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "END_TIME",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "NOTE",
+				"type": "text"
+			},
+			{
+				"name": "IS_DELD",
+				"type": "bit"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "F_EQUIP_SCHD"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

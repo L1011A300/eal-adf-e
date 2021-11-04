@@ -1,0 +1,19 @@
+{
+	"name": "eal_ac_src_active_flights",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "eal_airlinechoice_src",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Source"
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"typeProperties": {
+			"relativeUrl": "flights/GetActiveFlights"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
